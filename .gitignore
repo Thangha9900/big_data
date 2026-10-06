@@ -1,0 +1,5 @@
+Big_Data_Extension/output/
+*.pbix
+__pycache__/
+*.py[cod]
+Big_Data_Extension/postgresql-42.7.x.jar

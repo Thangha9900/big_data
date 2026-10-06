@@ -1,0 +1,13 @@
+-- Tao cac measure nay trong Power BI: Modeling > New measure.
+
+Total Revenue = SUM(monthly_revenue[revenue])
+
+Total Orders = SUM(monthly_revenue[order_count])
+
+Total Quantity Sold = SUM(monthly_revenue[quantity_sold])
+
+Average Revenue per Order = DIVIDE([Total Revenue], [Total Orders], 0)
+
+Top Product Revenue = SUM(top_products[revenue])
+
+Category Revenue = SUM(category_revenue[revenue])
