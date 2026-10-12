@@ -71,3 +71,7 @@ Dữ liệu lịch sử và dashboard của dự án đã có sẵn. Các script
 ## SQL và tối ưu
 
 Chạy các truy vấn trong `SQL_Queries/` trên cơ sở dữ liệu dự án để xem các phân tích nâng cao như xếp hạng danh mục, doanh thu theo tháng và doanh thu lũy kế. Đánh giá các index trong `Optimization/indexes.sql` bằng `EXPLAIN (ANALYZE, BUFFERS)` trước và sau khi tạo index; ghi kết quả thực đo vào `Optimization/benchmark_results.md`, không giả định rằng mọi truy vấn đều nhanh hơn khi có index.
+
+# Chạy chương trình 
+$env:PGPASSWORD = "123456"
+python Big_Data_Extension/spark_analysis.py
